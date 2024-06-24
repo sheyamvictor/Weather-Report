@@ -18,18 +18,6 @@ function Weather() {
 
     const [time, settime] = useState("")
 
-    const scrollRef = useRef(null);
-
-    const scrollToRight = () => {
-      if (scrollRef.current) {
-        scrollRef.current.scrollTo({
-          left: scrollRef.current.scrollWidth,
-          behavior: 'smooth' ,// Change to 'auto' for instant scroll,
-          duration:5000
-
-        });
-      }
-    };
   
     
     
@@ -57,7 +45,7 @@ function Weather() {
         })
             
             
-        scrollToRight();
+      
 
     }
 
